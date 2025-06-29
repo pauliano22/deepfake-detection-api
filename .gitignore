@@ -10,7 +10,7 @@ ENV/
 env.bak/
 venv.bak/
 
-# Data files
+# Data files (user-specific audio samples)
 data/raw/
 data/processed/
 *.wav
@@ -18,11 +18,12 @@ data/processed/
 *.m4a
 *.flac
 
-# Models
+# Model files (too large, user-specific)
 models/*.pkl
 models/*.joblib
+!models/.gitkeep
 
-# Environment
+# Environment (contains API keys)
 .env
 .env.local
 
